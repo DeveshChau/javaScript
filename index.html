@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
 	<title>JS Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/calculator.css">
 </head>
 <body>
-<input type="textfield" name="" id="firstNumber">
-<input type="textfield" name="" id="secondNumber">
-<input type="textfield" name="" id="answer">
-<button onclick="addition()" >Addition</button>
-<button onclick="subtraction()" >Subtraction</button>
-<button onclick="multiplication()" >Multiplication</button>
-<button onclick="division()" >Division</button>
-<script src="calculator.js"></script>
+<section>
+<div>
+	<input type="textfield" class="textbox" id="display">
+</div>
+<div>
+	<button id="addition" class="oprations"> + </button>
+	<button id="subtraction" class="oprations"> - </button>
+	<button id="multiplication" class="oprations"> * </button>
+	<button id="division" class="oprations"> / </button>
+	<button id="calcutate" class="answer" > = </button>
+</div>
+</section>
+<script src="js/calculator.js"></script>
 </body>
 </html>
