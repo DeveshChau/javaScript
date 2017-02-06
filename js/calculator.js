@@ -1,11 +1,45 @@
-document.getElementById("addition").onclick = function(){
-	var displayOne = document.getElementById("display").value;
+var displayOne;
+var displayTwo;
+var answer;
+var inputOne;
+var inputTwo;
+document.getElementById("addition").onclick = function(){	
+	displayOne = document.getElementById("display").value;	
 	inputOne = parseInt(displayOne); 	
-	document.getElementById("display").value = "0";
-	var displayTwo = document.getElementById("display").value;
-	inputTwo = parseInt(displayOne);
-	var answer = inputTwo + inputOne;
-	document.getElementById("calculate").onclick = function (answer) {
-		document.getElementById("display").value = answer;
-	}
-};
+	document.getElementById("display").value = "";	
+	document.getElementById("calcutate").onclick = function(){	
+	displayTwo = document.getElementById("display").value;		
+	inputTwo = parseInt(displayTwo);
+	answer = parseInt(inputOne + inputTwo);	
+	document.getElementById("display").value = answer;	
+}};
+document.getElementById("subtraction").onclick = function(){	
+	displayOne = document.getElementById("display").value;	
+	inputOne = parseInt(displayOne); 	
+	document.getElementById("display").value = "";	
+	document.getElementById("calcutate").onclick = function(){	
+	displayTwo = document.getElementById("display").value;		
+	inputTwo = parseInt(displayTwo);
+	answer = parseInt(inputOne - inputTwo);	
+	document.getElementById("display").value = answer;	
+}};
+document.getElementById("multiplication").onclick = function(){	
+	displayOne = document.getElementById("display").value;	
+	inputOne = parseInt(displayOne); 	
+	document.getElementById("display").value = "";	
+	document.getElementById("calcutate").onclick = function(){	
+	displayTwo = document.getElementById("display").value;		
+	inputTwo = parseInt(displayTwo);
+	answer = parseInt(inputOne * inputTwo);	
+	document.getElementById("display").value = answer;	
+}};
+document.getElementById("division").onclick = function(){	
+	displayOne = document.getElementById("display").value;	
+	inputOne = parseInt(displayOne); 	
+	document.getElementById("display").value = "";	
+	document.getElementById("calcutate").onclick = function(){	
+	displayTwo = document.getElementById("display").value;		
+	inputTwo = parseInt(displayTwo);
+	answer = parseInt(inputOne / inputTwo);	
+	document.getElementById("display").value = answer;	
+}};
