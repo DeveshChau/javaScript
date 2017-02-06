@@ -3,10 +3,14 @@ var displayTwo;
 var answer;
 var inputOne;
 var inputTwo;
+window.onload = function(){
+	document.getElementById("display").focus();
+};
 document.getElementById("addition").onclick = function(){	
 	displayOne = document.getElementById("display").value;	
 	inputOne = parseInt(displayOne); 	
 	document.getElementById("display").value = "";	
+	document.getElementById("display").focus();
 	document.getElementById("calcutate").onclick = function(){	
 	displayTwo = document.getElementById("display").value;		
 	inputTwo = parseInt(displayTwo);
@@ -17,6 +21,7 @@ document.getElementById("subtraction").onclick = function(){
 	displayOne = document.getElementById("display").value;	
 	inputOne = parseInt(displayOne); 	
 	document.getElementById("display").value = "";	
+	document.getElementById("display").focus();
 	document.getElementById("calcutate").onclick = function(){	
 	displayTwo = document.getElementById("display").value;		
 	inputTwo = parseInt(displayTwo);
@@ -27,6 +32,7 @@ document.getElementById("multiplication").onclick = function(){
 	displayOne = document.getElementById("display").value;	
 	inputOne = parseInt(displayOne); 	
 	document.getElementById("display").value = "";	
+	document.getElementById("display").focus();
 	document.getElementById("calcutate").onclick = function(){	
 	displayTwo = document.getElementById("display").value;		
 	inputTwo = parseInt(displayTwo);
@@ -37,6 +43,7 @@ document.getElementById("division").onclick = function(){
 	displayOne = document.getElementById("display").value;	
 	inputOne = parseInt(displayOne); 	
 	document.getElementById("display").value = "";	
+	document.getElementById("display").focus();
 	document.getElementById("calcutate").onclick = function(){	
 	displayTwo = document.getElementById("display").value;		
 	inputTwo = parseInt(displayTwo);
