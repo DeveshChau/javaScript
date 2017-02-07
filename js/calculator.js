@@ -47,3 +47,41 @@ document.getElementById("division").onclick = function(){
 	answer = parseInt(inputOne / inputTwo);	
 	setValue();
 }};
+document.getElementById("display").onkeypress = function(event){
+	
+	if (event.which == 43 || event.which == 45
+		|| event.which == 42 || event.which == 47){
+		getValueOne();				
+	}
+	if (event.which == 13){
+		displayTwo = document.getElementById("display").value;
+		var x = displayTwo[0];
+		switch(x){
+			case "+" :					
+				displayTwo = displayTwo.slice(1);			
+				inputTwo = parseInt(displayTwo);
+				answer = parseInt(inputOne + inputTwo);
+				setValue();
+				break;
+			case "-" :
+				displayTwo = displayTwo.slice(1);			
+				inputTwo = parseInt(displayTwo);
+				answer = parseInt(inputOne - inputTwo);
+				setValue();
+				break;
+			case "*" :
+				displayTwo = displayTwo.slice(1);			
+				inputTwo = parseInt(displayTwo);
+				answer = parseInt(inputOne * inputTwo);
+				setValue();
+				break;
+			case "/" :
+				displayTwo = displayTwo.slice(1);			
+				inputTwo = parseInt(displayTwo);
+				answer = parseInt(inputOne / inputTwo);
+				setValue();
+				break
+
+		}
+	}	
+};
