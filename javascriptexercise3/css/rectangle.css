@@ -1,0 +1,13 @@
+.rectangle{
+	width: 400px;
+	height: 200px;	
+	background: #4CAF50;
+}
+.button{
+	background: #ff3333;
+	width: 100px;
+	height: 50px;
+	margin-bottom: 10px;
+	border-style: none;
+	color: #ffffff;
+}
