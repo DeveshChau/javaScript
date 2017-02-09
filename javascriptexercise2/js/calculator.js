@@ -9,7 +9,7 @@ window.onload = function(){
 function getValueOne(){
 	displayOne = document.getElementById("display").value;	
 	inputOne = parseInt(displayOne); 	
-	document.getElementById("display").value = "";	
+//	document.getElementById("display").value = "";	
 	document.getElementById("display").focus();
 };
 function getValueTwo(){
