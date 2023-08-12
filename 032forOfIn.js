@@ -30,7 +30,7 @@ for (let i in iterableObj) {
 console.log("For in obj with hasOwn");
 for (let i in iterableObj) {
     if(Object.hasOwn(iterableObj, i)) {
-        console.log(i); // "0","1","2",foo
+        console.log(i); // myName, city
     }
 }
 console.log("For of obj - iterableObj is not iterable");
